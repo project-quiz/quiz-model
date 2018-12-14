@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package Quiz.Data;
+package Data;
 
 message Question 
 {
