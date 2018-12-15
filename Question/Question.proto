@@ -1,9 +1,12 @@
 syntax = "proto3";
 
-package Data;
+package Data.Question;
+
+import "Question/Answer.proto";
 
 message Question 
 {
     string guid = 1;
     int32 type = 2;
+    Answer answers = 3;
 }

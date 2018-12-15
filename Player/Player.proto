@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package Data;
+
+message Player
+{
+    string guid = 1;
+}
+
+message PlayerJoined
+{
+    int32 id = 1;
+    Player player = 2;
+}
+
+message PlayerLeft
+{
+    int32 id = 1;
+    Player player = 2;
+}
+
+message PlayersNickNameChanged
+{
+    int32 id = 1;
+    Player player = 2;
+}
