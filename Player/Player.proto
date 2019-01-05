@@ -5,6 +5,7 @@ package Data;
 message Player
 {
     string guid = 1;
+    string nickname = 2;
 }
 
 message PlayerJoined

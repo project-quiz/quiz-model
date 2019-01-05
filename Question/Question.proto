@@ -2,11 +2,11 @@ syntax = "proto3";
 
 package Data.Question;
 
-import "Question/Answer.proto";
+import "Answer.proto";
 
 message Question 
 {
     string guid = 1;
-    int32 type = 2;
-    Answer answers = 3;
+    string question = 2;
+    repeated Answer answers = 3;
 }

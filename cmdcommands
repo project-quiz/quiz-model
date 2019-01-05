@@ -1,1 +1,10 @@
 protoc -I=C:/Users/guido/.nuget/packages/google.protobuf.tools/3.6.1/tools --go_out="gen/go" --csharp_out="gen/csharp" -I=. *.proto
+
+//Seek for an easier way of doing sub folders.
+protoc -I=C:/Users/guido/.nuget/packages/google.protobuf.tools/3.6.1/tools --go_out="../gen/go/Welcome" --csharp_out="../gen/csharp/Welcome" -I=. *.proto
+cd Player && protoc -I=C:/Users/guido/.nuget/packages/google.protobuf.tools/3.6.1/tools --go_out="../gen/go/Player" --csharp_out="../gen/csharp/Player" -I=. *.proto
+
+//Add extra actions so we can execute the command in the base folder.
+cd Player && protoc -I=C:/Users/guido/.nuget/packages/google.protobuf.tools/3.6.1/tools --go_out="../gen/go/Player" --csharp_out="../gen/csharp/Player" -I=. *.proto && cd .. &&
+cd Welcome && protoc -I=C:/Users/guido/.nuget/packages/google.protobuf.tools/3.6.1/tools --go_out="../gen/go/Welcome" --csharp_out="../gen/csharp/Welcome" -I=. *.proto && cd .. &&
+cd Question && protoc -I=C:/Users/guido/.nuget/packages/google.protobuf.tools/3.6.1/tools --go_out="../gen/go/Question" --csharp_out="../gen/csharp/Question" -I=. *.proto && cd ..
