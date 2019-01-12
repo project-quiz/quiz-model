@@ -10,18 +10,18 @@ message Player
 
 message PlayerJoined
 {
-    int32 id = 1;
+    string guid = 1;
     Player player = 2;
 }
 
 message PlayerLeft
 {
-    int32 id = 1;
+    string guid = 1;
     Player player = 2;
 }
 
 message PlayersNickNameChanged
 {
-    int32 id = 1;
+    string guid = 1;
     Player player = 2;
 }
