@@ -1,11 +1,17 @@
 syntax = "proto3";
 
-package Data;
+package model;
 
 message Player
 {
     string guid = 1;
     string nickname = 2;
+}
+
+message PlayerJoin
+{
+    //Add all data that the user needs to fill in before joining. (avatar? etc.)
+    string nickname = 1;
 }
 
 message PlayerJoined
