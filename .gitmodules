@@ -1,6 +1,6 @@
 [submodule "gen/csharp"]
 	path = gen/csharp
-	url = git@bitbucket.org:bgjinc/quiz-c-model.git
+url=git@github.com:project-quiz/quiz-csharp-model.git
 [submodule "gen/go"]
 	path = gen/go
-	url = git@bitbucket.org:bgjinc/quiz-go-model.git
+url=git@github.com:project-quiz/quiz-go-model.git
