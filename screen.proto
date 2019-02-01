@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package model;
+
+message ScreenLayout
+{
+    //JSON string
+    string Content = 1;
+}
+
+message SwitchScreen
+{
+    ScreenLayout Layout = 1;
+}
