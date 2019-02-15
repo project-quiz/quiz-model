@@ -1,1 +1,1 @@
-protoc -I="C:/Users/guido/.nuget/packages/google.protobuf.tools/3.6.1/tools" --go_out="gen/go/model" --csharp_out="gen/csharp" --proto_path="." *.proto
+protoc -I="C:/Users/guido/.nuget/packages/google.protobuf.tools/3.6.1/tools" --go_out="gen/go/message" --csharp_out="gen/csharp" --proto_path="." *.proto
