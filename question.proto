@@ -9,4 +9,5 @@ message Question
     string guid = 1;
     string question = 2;
     repeated Answer answers = 3;
+    int32 Time = 4;
 }

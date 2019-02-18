@@ -3,6 +3,7 @@ syntax = "proto3";
 package message;
 
 import "player.proto";
+import "question.proto";
 
 // Messages client -> server
 message JoinGame
@@ -13,25 +14,41 @@ message JoinGame
 // Messages server -> client
 message GameJoined
 {
-    
+    string GUID = 1;
+    repeated Player Players = 2;
 }
 
 message GameStart
 {
-
+    string GUID = 1;
+    repeated Player Players = 2;
 }
 
-message GameStop
+message GameUpdate
 {
+    string GUID = 1;
+    repeated Player Players = 2;
+    Question Question = 3;
+    int32 Time = 4;
+}
 
+message GameWait
+{
+    string GUID = 1;
+}
+
+message NextQuestion
+{
+    string GUID = 1;
+    Question Question = 2;
 }
 
 message GameEnd
 {
-
+    string GUID = 1;
 }
 
 message GameResult
 {
-
+    string GUID = 1;
 }
